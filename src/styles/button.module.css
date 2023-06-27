@@ -1,0 +1,44 @@
+.standard {
+  position: relative;
+  border-radius: var(--borderRadiusLg);
+  transition: all 150ms;
+  width: 100%;
+  color: var(--textColor);
+}
+.standard:hover {
+  opacity: 0.8;
+}
+
+.standard:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.variantdefault {
+  background-color: var(--iconColor);
+  color: var(--textColor);
+  border: 1px solid var(--iconColor);
+}
+.variantoutline {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
+.sizedefault {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 600;
+  border-width: 2px;
+}
+
+.sizesmall {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-weight: 300;
+  border-width: 1px;
+}

@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --backgroundColor: #232529;
+  --backgroundSecondaryColor: #32353b;
+  --iconColor: #057a55;
+  --iconSecondaryColor: rgb(107 114 128);
+  --iconSecondaryHoverColor: rgb(156 163 175);
+  --textColor: #e2e3e7;
+  --dividerColor: #35383f;
+  --borderColor: rgb(107 114 128);
+  --borderRadiusXl: 9999px;
+  --borderRadiusLg: 0.5rem;
+  --errorColor: #b80000;
+}
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+/* total width */
+*::-webkit-scrollbar {
+  background-color: var(--backgroundColor);
+  width: 10px;
+}
+
+/* background of the scrollbar except button or resizer */
+*::-webkit-scrollbar-track {
+  background-color: var(--backgroundColor);
+}
+
+/* scrollbar itself */
+*::-webkit-scrollbar-thumb {
+  background-color: var(--iconSecondaryColor);
+  border-radius: 16px;
+  border: 1px solid var(--iconSecondaryColor);
+}
+
+/* set button(top and bottom of the scrollbar) */
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}
+
+.rdrMonth {
+  width: 100% !important;
+}
+
+.rdrCalendarWrapper {
+  width: 100% !important;
+  font-size: 16px !important;
+}
